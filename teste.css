@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* o asteristico{} é uma forma rezetar, zera toda confg. pré definida*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100;
+    background: linear-gradient(68.15deg, #fe8330 16.62%, #e0ac11 85.61%);
+    height: 100vh; /*para remover os bugs*/
+    width: 100vw; /*para remover os bugs*/
+}
+/*o 'display flex' é o codigo para usar o flexbox,*/
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px; /*preenchimento, deixar um item mais pra baixo*/
+}
+.cabeçalho-imagem{
+    height: 72px;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 20px;
+}
+.cabeçalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400; /*deixa em negrito*/
+    font-size: 18px; /*tamanho da fonte*/
+    color: #fff2e7;
+    cursor: pointer; /*mudar o cursor do mouse para mãoziniha*/
+}
+
+.conteudo{
+    margin-bottom: 45px; /*ele coloca uma distancia entre o conteudo do main e o do footer*/
+    border-top: 0.4px solid #fff2e7;/*colocar a linha de inicio do conteudo principal*/
+    font-size: 21px;
+    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400; /*espessura da fonte*/
+    font-size: 64px; /*tamanho da fonte*/
+    color: #fff2e7;/*cor*/
+    text-shadow: 0.1em 0.1em 0.2em black;
+}    
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'sarala',sans-serif; /*fonte de escrita do subtitulo*/
+    font-weight: 400; /*espessura da fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    text-shadow: 0.1em 0.1em 0.2em black;
+    color: #fff2e7;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color:#2fb3d4 ; /*cor do fundo*/
+    width: 180px;/*largura*/
+    height: 67px;/*altura*/
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 25); /*sombra de caixa*/
+    border-radius: 20px;
+    font-family: 'sarala',sans-serif; /*fonte de escrita do subtitulo*/
+    font-weight: 400; /*espessura da fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+    color: #fff2e7;
+    
+}
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    cursor: pointer; /*mudar o cursor do mouse para mãoziniha*/
+
+}
+.imagem-main{
+    height: 500px; /*altura*/
+    padding: 5px; /*preenchimento, deixar um item mais pra baixo*/
+    gap: 20px; /*brecha*/
+    width: 500px; /*largura*/
+}
+
+.conteudo-secundario  {
+    display: flex; /*exibição flexível*/
+    flex-direction: column; /*direção flexível: coluna*/
+    align-items: center; /*alinhar itens: centro*/
+    gap: 24px; /*brecha*/
+    margin-top: 48px; /*margem superior*/   
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #fff2e7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400; /*espessura da fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    color: #fff2ef;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'sarala',sans-serif; /*fonte de escrita do subtitulo*/
+    font-weight: 300; /*espessura da fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+    color: #ecd6c4;
+}
+
+.rodape{
+    padding: 22px;
+    border-top: 0.4px solid #fff2e7;
+}
+
+.rodape-text{
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-weight: 400; /*espessura da fonte*/
+    font-size: 48px; /*tamanho da fonte*/
+    color: #fff2e7;/*cor*/
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* */
+
+.content {
+    height: 560px;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden; /*esconder os itens que estavam passando*/
+}
+
+.navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-60%,900px);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 5px;
+    border-radius: 5px; /*borda do botão branco*/
+    cursor: pointer;
+}
